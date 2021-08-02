@@ -639,10 +639,11 @@ footer {
     .links {
         margin: 1rem 0 0;
         text-align: center;
-    }
-    .links:not(.links:last-child) {
         overflow: hidden;
     }
+    /* .links:not(.links:last-child) {
+        overflow: hidden;
+    } */
     .links-last {
         margin: 2rem auto 0;
         width: 95%;
@@ -691,10 +692,9 @@ footer {
     .link li {
         padding: 0rem 1.1rem 1rem 0;
     }
-    /* .link-container {
-        height: 0;
-        transition: all .4s;
-    } */
+    .link-container {
+        overflow: hidden;
+    }
     .container-text {
         margin-top: 7rem;
     }
