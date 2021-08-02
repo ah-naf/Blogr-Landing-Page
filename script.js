@@ -6,6 +6,7 @@ $(document).ready(() => {
 
     main_link.on('click', event => {
         const link_box = $($($(event.currentTarget).siblings()[2]).children());
+        console.log(link_box);
         const arrow_img = $($(event.currentTarget).siblings()[0]);
         // console.log(link_box)
         if (link_box.hasClass('link-show')) {
@@ -49,7 +50,7 @@ $(document).ready(() => {
         // Menus in hamburger box
 
         main_link.on('click', event => {
-            const link_box = $($(event.currentTarget).siblings()[2]);
+            const link_box = $($($(event.currentTarget).siblings()[2]).children());
             const arrow_img = $($(event.currentTarget).siblings()[1]);
 
             if (link_box.hasClass('link-box-show')) {
@@ -85,7 +86,7 @@ function clearAll(main_link) {
 
 function clearAllMobile(main_link) {
     main_link.each((index, element) => {
-        const link_box = $($(element).siblings()[2]);
+        const link_box = $($($(event.currentTarget).siblings()[2]).children());
         const arrow_img = $($(element).siblings()[1]);
         link_box.removeClass('link-box-show');
         arrow_img.removeClass('arrow-rotate');
